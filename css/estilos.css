@@ -139,3 +139,45 @@ main{
     border: none;
     transition: all 600ms;
 }
+
+/* pagina Nosotros */
+.nosotros {
+    color: #FFF;
+}
+
+.misionVision {
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.misionVision div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2rem;
+    padding: 1rem;
+
+
+}
+
+.misionVision div h2 {
+    font-family: looki,Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    width: 20rem;
+    background-color: rgba(255, 255, 255, 0.2);
+
+    border-radius: 1000px;
+}
+
+.misionVision .Mision p , .misionVision .Vision p {
+text-align: justify;
+background-color: rgba(255, 255, 255, 0.2) ;
+border-radius: 50px;
+margin-top: 1rem;
+padding: 1rem;
+
+}
