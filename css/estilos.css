@@ -181,3 +181,20 @@ margin-top: 1rem;
 padding: 1rem;
 
 }
+.card-body {
+    display: flex;
+    flex-direction: column;
+align-items: center;
+}
+.card-title {
+    width: 15rem;
+    padding: 2px;
+    background-color: rgba(255, 255, 255, 0.2) ;
+border-radius: 50px;
+color: #FFF;
+}
+
+.card-text {
+    display: flex;
+    width: 80%;
+    color: white !important; }
