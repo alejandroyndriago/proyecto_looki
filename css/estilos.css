@@ -14,12 +14,13 @@
 body{
     font-family: looki,Arial, Helvetica, sans-serif;
 }
-h1{
-    font-family: looki;
-    font-size: 100px;
-    text-align: center;
-    margin-top: 5px ;
-    color: rgb(98, 5, 157);
+
+h1 {
+  font-family: looki;
+  font-size: 100px;
+  text-align: center;
+  margin-top: 5px;
+  color: rgb(98, 5, 157);
 }
 
 main{
