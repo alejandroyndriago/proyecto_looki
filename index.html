@@ -10,31 +10,43 @@
 </head>
 <body> 
    
-   
-    <h1>L</h1> <canvas id="canvas" width="1000px" height="50px">
-    </canvas><h1>KI</h1>
+    <div class="grilla">
+    <h1 class="ll">L</h1> 
+    <canvas class="ojos" id="canvas" width="150px" height="100px">
+    </canvas>
+    <h1 class="ki">KI</h1>
     
+    </div>
     <div class="container-box">
 
         <div class="box box1">
             <h2>Inicia sesion</h2>
             
             <div class="container-p">
-                <p>¿Ya eres miembro de nuestra comunidad?</p>
+                <form>
+                    <label for="correo">Correo Electrónico:</label><br>
+                    <input type="email" id="correo" name="correo" required><br><br>
+                    
+                    <label for="contrasena">Contraseña:</label><br>
+                    <input type="password" id="contrasena" name="contrasena" required><br><br>
+                    
+                    <a href="olvidar_contrasena.html">¿Olvidaste tu contraseña?</a><br>
+                      
+                </form>
             </div>
 
-            <div class="check">
-                <i class="fas fa-check"></i>
-            </div>
         </div>
-        <div class="box box3">
+        <div class="box box2">
             <h2>Registrate</h2>
             <div class="container-p">
-                <p>¡Registrate y se parte de esta nueva comunidad!</p>
-            </div>
+                <form>
+                    <label for="correo">Nuevo Correo Electrónico:</label><br>
+                    <input type="email" id="correo" name="correo" required><br><br>
+                    
+                    <label for="contrasena">Nueva Contraseña:</label><br>
+                    <input type="password" id="contrasena" name="contrasena" required><br><br>
 
-            <div class="check">
-                <i class="fas fa-check"></i>
+                </form>
             </div>
         </div>
             
