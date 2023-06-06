@@ -3,7 +3,7 @@
     espacio entre el elemento y su padre o elementos vecinos. */
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+
   text-decoration: none;
 }
 @font-face {
@@ -24,7 +24,7 @@ h1 {
 
 main {
   width: 100%;
-  max-width: 1000px;
+  max-width: 100%;
   margin: auto;
 }
 
@@ -93,7 +93,7 @@ main {
 }
 .grilla {
   display: grid;
-  grid-template-columns: 40% auto 50%;
+  grid-template-columns: 45% 10% 45%;
   grid-template-areas: "ll" "ojos" "ki";
 }
 .ll {
@@ -241,7 +241,7 @@ section .valores {
   border-top-left-radius: 50px;
 }
 .carousel .card-title {
-  width: 15rem;
+  width: auto;
   padding: 2px;
   background-color: rgba(48, 18, 107, 0.109);
   text-shadow: 1px 1px 5px purple;
@@ -261,3 +261,59 @@ section .valores {
   color: rgb(255, 255, 255) !important;
   text-shadow: 1px 1px 3px purple;
 }
+
+/* Pagina de contacto */
+.contactenos header {
+  background-color: gray;
+
+}
+.contactenos nav{
+  background-color: gray;
+}
+
+.contactenos main {
+  display: flex;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  flex-direction: row;
+  padding: 10px;
+  justify-content: space-around;
+  background-color: rgba(255, 255, 255, 0.57);
+}
+.contactenos main .direccionOficiona {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+
+}
+.contactenos main .formularioAtencion {
+  display: flex;
+  border: 2px solid red;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+}
+
+.contactenos main .formularioAtencion form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+align-items: center;
+width: 60%;
+text-align: center;
+font-family: lokki,Arial, Helvetica, sans-serif;
+}
+
+.contactenos main .formularioAtencion form input {
+  width: 100%;
+}
+
+
+.contactenos footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0 10px;
+  background-color: gray;
+} 
