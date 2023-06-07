@@ -151,9 +151,9 @@ footer .ladoDer {
 /* pagina Nosotros */
 .nosotros {
   color: rgb(255, 255, 255);
-  background-image: url(https://img.freepik.com/foto-gratis/marron-beige-crema-claro-lujo-abstracto-como-fondo-modelo-textura-seda-algodon_1258-71591.jpg);
+  /* background-image: url(https://img.freepik.com/foto-gratis/marron-beige-crema-claro-lujo-abstracto-como-fondo-modelo-textura-seda-algodon_1258-71591.jpg);
   background-size: 200%;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat; */
 }
 
 .nosotros .grupo h3 {
@@ -219,6 +219,7 @@ section .valores {
   background-color: white;
   flex-direction: column;
   align-items: center;
+  height: 100%;
 }
 .valores h2 {
   font-size: 1.5rem;
@@ -251,12 +252,16 @@ section .valores {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
+  width: 80%;
+  height:300px;
 }
 .carousel .text-center {
   border: none;
 }
 .carousel .carousel-inner {
   width: 60%;
+
 }
 .carousel .card-body {
   display: flex;
@@ -266,7 +271,7 @@ section .valores {
   border-radius: 50px;
   justify-content: center;
   align-items: center;
-  height: 30vh;
+  /* height: 30vh; */
 }
 .carousel .carousel-control-next-icon {
   background-color: rgba(48, 18, 107, 0.449);
@@ -294,13 +299,28 @@ section .valores {
   justify-content: center;
   align-items: center;
   width: 80%;
-
   border-radius: 10px;
   color: rgb(255, 255, 255) !important;
   text-shadow: 1px 1px 3px purple;
 }
 .nosotros footer {
-  margin: 0;
+  height: 60px;
+  display: flex;
+  flex-direction: row;
+  box-sizing:content-box;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 5px 10px 5px 10px;
+    line-height: 0;
+    color: white;
+    font-weight: bold;
+    background-color: gray;
+}
+.nosotros footer .ladoDer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: end;
+
 }
 
 /* Pagina de contacto */
@@ -316,18 +336,19 @@ section .valores {
   font-size: 40px;
   display: flex;
   justify-content: center;
-  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-family: looki, Arial, Helvetica, sans-serif;
   color: gray;
 }
 
 .contactenos main {
   display: flex;
-  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-family: looki, Arial, Helvetica, sans-serif;
+  color: white;
   flex-direction: row;
-
   text-shadow: 0 1px 5px rgb(69, 0, 84);
-  padding: 10px;
   justify-content: space-around;
+  height: 100%;
+  background-color: rgba(170, 0, 255, 0.213);
 }
 
 .contactenos main .direccionOficina {
@@ -335,7 +356,8 @@ section .valores {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  width: 40%;
+  width: 50%;
+  padding: 10px 0 20px 0;
 }
 
 
@@ -344,39 +366,65 @@ section .valores {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 40%;
+  width: 50%;
+  background-color: white;
 }
+.contactenos main .formularioAtencion h2{
+  color: gray;
+  font-family: 'Courier New', Courier, monospace;
+}
+
 
 .contactenos main .formularioAtencion form {
   display: flex;
+  color: rgba(53, 3, 106, 0.515);
+  font-weight: bolder;
+  text-shadow: 2px 2px 2px purple;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 60%;
+  width: 50%;
   text-align: center;
-  font-family: lokki, Arial, Helvetica, sans-serif;
+font-family: 'Courier New', Courier, monospace;
 }
 
+.contactenos main .formularioAtencion form label {
+  font-size: 20px;
+  text-shadow: none;
+} 
 
 .contactenos main .formularioAtencion form input {
   width: 100%;
   outline: none;
+  font-family: 'Courier New', Courier, monospace;
   border: none;
+  padding-left: 10px;
+  padding-right: 10px;
   border-bottom: 2px double rgb(57, 0, 113);
   margin-bottom: 20px;
 }
 .contactenos main .formularioAtencion form textarea {
 outline: none;
 border: none;
-padding: 5px 10px;
+padding: 5px 20px;
 background: linear-gradient(5deg, rgba(34, 1, 52, 0.5), rgba(255, 255, 255, 0.2));
 
+}
+.contactenos main .formularioAtencion form button {
+  margin-top: 2rem;
+  width: 10rem;
+  color: white;
+  font-weight: bolder;
+  background-color: rgb(115, 0, 255);
 }
 
 .contactenos footer {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 0 10px;
+  padding: 5px 10px 5px 10px;
   background-color: gray;
+  line-height: normal;
+  height: 5rem;
 }
+
