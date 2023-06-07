@@ -36,9 +36,13 @@
             </ul>
           </div>
     </nav>
+    <section class="tituloContacto">
+    <h2>Contactenos</h2>
+  </section>
     <main>
       <section class="direccionOficina">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.2699204776472!2d-74.06476962582578!3d4.7231098414645585!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f853c5828a239%3A0x6b33cfce431b1811!2sCentro%20Comercial%20Paseo%20San%20Rafael!5e0!3m2!1ses!2sco!4v1686061521052!5m2!1ses!2sco" width="600" height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <h2>Estamos ubicados</h2>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.2699204776472!2d-74.06476962582578!3d4.7231098414645585!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f853c5828a239%3A0x6b33cfce431b1811!2sCentro%20Comercial%20Paseo%20San%20Rafael!5e0!3m2!1ses!2sco!4v1686061521052!5m2!1ses!2sco" width="500" height="400" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </section>
       <section class="formularioAtencion">
         <h2>Formulario de atención</h2>
@@ -48,7 +52,6 @@
           <input
             type="text"
             id="name"
-            placeholder="Escriba su nonbre..."
             required
           />
           <label for="correo">Correo Electronico</label>
@@ -56,21 +59,20 @@
             type="email"
             name="correo"
             id="correo"
-            placeholder="example@example.com"
             required
           />
           <label for="telefono">Telefono</label>
           <input
-            type="number"
+            type="tel"
             id="telefono"
             name="telefono"
-            placeholder="+570000000000"
             required
           />
           <label for="comentario">Que necesitas?</label>
-          <input type="text" 
+          <textarea type="text" 
           name="comentario"
-          id="comentario" placeholder="Comentenos" />
+          rows="5" cols="35"
+          id="comentario"></textarea>
           <button type="submit">enviar</button>
         </form>
       </section>

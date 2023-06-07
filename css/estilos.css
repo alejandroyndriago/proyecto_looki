@@ -1,16 +1,15 @@
-* {
+*{
   /* `margin: 0;` establece el margen de todos los elementos en 0, lo que significa que no habrá
     espacio entre el elemento y su padre o elementos vecinos. */
   margin: 0;
   padding: 0;
-
-  text-decoration: none;
 }
 @font-face {
   font-family: looki;
   src: url("../fonts/lucida-handwriting-italic.ttf");
 }
 .index {
+
   font-family: looki, Arial, Helvetica, sans-serif;
 }
 
@@ -24,8 +23,8 @@ h1 {
 
 main {
   width: 100%;
-  max-width: 100%;
-  margin: auto;
+height: 100%;
+  margin-bottom: auto;
 }
 
 .title {
@@ -36,7 +35,6 @@ main {
 .container-box {
   width: 100%;
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
 }
 
@@ -108,6 +106,46 @@ main {
   grid-area: "ki";
   display: flex;
   justify-content: baseline;
+}
+
+footer {
+  font-family: 'Courier New', Courier, monospace;
+  display: flex;
+  margin-top: 50px;
+  padding: 5px 10px 5px 10px;
+  height: 60px;
+  color: white;
+  font-weight: bold;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: gray;
+}
+
+footer a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+
+footer .ladoIz {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+footer .ladoCe {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  color: rgb(255, 255, 255);
+}
+
+footer .ladoDer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: end;
 }
 
 /* pagina Nosotros */
@@ -261,54 +299,79 @@ section .valores {
   color: rgb(255, 255, 255) !important;
   text-shadow: 1px 1px 3px purple;
 }
+.nosotros footer {
+  margin: 0;
+}
 
 /* Pagina de contacto */
 .contactenos header {
-  background-color: gray;
-
+  background-color: rgb(255, 255, 255);
 }
-.contactenos nav{
-  background-color: gray;
+
+.contactenos nav {
+  background-color: rgb(255, 255, 255);
+}
+.contactenos .tituloContacto h2 {
+  margin: 10px 0 30px;
+  font-size: 40px;
+  display: flex;
+  justify-content: center;
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  color: gray;
 }
 
 .contactenos main {
   display: flex;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   flex-direction: row;
+
+  text-shadow: 0 1px 5px rgb(69, 0, 84);
   padding: 10px;
   justify-content: space-around;
-  background-color: rgba(255, 255, 255, 0.57);
 }
-.contactenos main .direccionOficiona {
+
+.contactenos main .direccionOficina {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  width: 50%;
-
+  width: 40%;
 }
+
+
 .contactenos main .formularioAtencion {
   display: flex;
-  border: 2px solid red;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 50%;
+  width: 40%;
 }
 
 .contactenos main .formularioAtencion form {
   display: flex;
   flex-direction: column;
   justify-content: center;
-align-items: center;
-width: 60%;
-text-align: center;
-font-family: lokki,Arial, Helvetica, sans-serif;
+  align-items: center;
+  width: 60%;
+  text-align: center;
+  font-family: lokki, Arial, Helvetica, sans-serif;
 }
+
 
 .contactenos main .formularioAtencion form input {
   width: 100%;
+  outline: none;
+  border: none;
+  border-bottom: 2px double rgb(57, 0, 113);
+  margin-bottom: 20px;
 }
+.contactenos main .formularioAtencion form textarea {
+outline: none;
+border: none;
+padding: 5px 10px;
+background: linear-gradient(5deg, rgba(34, 1, 52, 0.5), rgba(255, 255, 255, 0.2));
 
+}
 
 .contactenos footer {
   display: flex;
@@ -316,4 +379,4 @@ font-family: lokki,Arial, Helvetica, sans-serif;
   justify-content: space-between;
   padding: 0 10px;
   background-color: gray;
-} 
+}
