@@ -59,7 +59,7 @@ window.addEventListener("load",iniciar);
 
 
 registrationForm.addEventListener("submit", function(event){
-    event.preventDefault();
+
 
     //Referenciar datos
     const name = document.getElementById("name").value;

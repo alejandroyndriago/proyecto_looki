@@ -322,6 +322,9 @@ section .valores {
   align-items: end;
 
 }
+.nosotros footer .ladoDer p {
+  height: 1px;
+}
 
 /* Pagina de contacto */
 .contactenos header {
@@ -414,7 +417,9 @@ background: linear-gradient(5deg, rgba(34, 1, 52, 0.5), rgba(255, 255, 255, 0.2)
   margin-top: 2rem;
   width: 10rem;
   color: white;
+  padding: 10px 0;
   font-weight: bolder;
+  border-radius: 20px;
   background-color: rgb(115, 0, 255);
 }
 
@@ -426,5 +431,9 @@ background: linear-gradient(5deg, rgba(34, 1, 52, 0.5), rgba(255, 255, 255, 0.2)
   background-color: gray;
   line-height: normal;
   height: 5rem;
+}
+
+.contactenos footer .ladoDer p {
+  height: 3px;
 }
 
