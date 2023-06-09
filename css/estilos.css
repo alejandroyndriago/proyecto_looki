@@ -324,6 +324,7 @@ section .valores {
 }
 .nosotros footer .ladoDer p {
   height: 1px;
+  margin-bottom: 0;
 }
 
 /* Pagina de contacto */
