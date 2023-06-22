@@ -437,3 +437,57 @@ background: linear-gradient(5deg, rgba(34, 1, 52, 0.5), rgba(255, 255, 255, 0.2)
 .contactenos footer .ladoDer p {
   height: 3px;
 }
+
+/* Pagina de cursos */
+.cursos {
+  display: flex;
+  flex-direction: column;
+}
+
+.cursos nav {
+  margin: 10px;
+}
+
+.cursos nav .dropdown-menu {
+  margin-bottom: 100px;
+}
+
+
+.cursos .clasificacion .nav-tabs {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  border: none;
+  background-color: gray;
+  height: 40px;
+}
+
+.cursos .clasificacion ul .nav-item {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 1rem;
+  font-weight: bolder;
+  border: none;
+}
+
+.cursos .clasificacion ul .nav-item:hover {
+  border: none;
+  color: gray;
+  background-color: white;
+  border-top-left-radius: 50px;
+  border-bottom-right-radius: 40px;
+}
+
+.cursos .clasificacion ul .nav-item .nav-link {
+  color: rgb(41, 0, 57);
+  border: none;
+}
+
+.cursos .clasificacion ul .nav-item .nav-link:hover {
+  border: none;
+  border-bottom: none; 
+}
+
+.cursos .clasificacion ul .nav-item .dropdown-menu.show {
+  border: none;
+  border-bottom: 10px solid blue;
+}
