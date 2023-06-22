@@ -3,6 +3,8 @@
  * La función inicializa un elemento de lienzo y agrega un detector de eventos para que el movimiento
  * del mouse active una animación.
  */
+
+
 let canvas;
 function iniciar(){
     let elemento = document.getElementById("canvas");
@@ -54,3 +56,24 @@ escucha el evento "load", que se activa cuando la página ha terminado de cargar
 el evento "load", se llama a la función `iniciar`, que inicializa un elemento canvas y le agrega un
 detector de eventos mousemove. */
 window.addEventListener("load",iniciar);
+
+
+registrationForm.addEventListener("submit", function(event){
+
+
+    //Referenciar datos
+    const name = document.getElementById("name").value;
+    const correo = document.getElementById("correo").value;
+    const telefono = document.getElementById("telefono").value;
+
+    //Crearemos un popup que nos diga que el registro fue exitoso
+    Swal.fire({
+        icon: 'success',
+        title: 'Su mensaje fue enviado',
+        text: 'Nuestro equi se comunicara con usted lo antes posible.',
+        showConfirmButton: true,
+        timer: 2000
+    }).then(() => {
+
+    });
+  });
