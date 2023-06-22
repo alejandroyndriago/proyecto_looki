@@ -1,0 +1,298 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+
+
+/*ENCABEZADO DE LA PAGINA*/
+body{
+    background: black;
+
+}
+
+.header{
+    margin:-50px;
+    width: 100%;
+    padding: 25px;
+    position: sticky;
+    top: 0;
+    background: transparent;
+}
+
+
+/* INICIO, NOSOTROS, TRABAJA CON NOSOTROS, CONTACTO */
+.navbar a {
+    
+font-size: 20px;
+color: white;
+text-decoration: none;
+font-weight: 500;
+margin-right: 30px;
+font-size: 20px;
+text-shadow: -1px 1px 3px white;/*sombra*/
+
+}
+
+
+/*BARRA DE MOVIMIENTO DE INICIO, NOSOTROS, ETC*/
+ .navbar a{
+   
+    transition: 250ms; 
+    
+} 
+
+ .navbar a:hover{ 
+    
+    border-bottom: 2px solid white;
+    opacity: 1;  
+   
+ 
+
+   
+} 
+
+
+/*FONDO DE LA IMAGEN*/
+.background{
+    width: 100%;
+    height: 100vh;
+    display: flex; /* poner flexible a la pagina*/
+    align-items: center;
+    justify-content: center;
+
+    background: url('https://fondosmil.com/fondo/45321.jpg')no-repeat;
+    background-size: cover;
+    background-position: center;
+    
+}
+
+
+/*IMAGEN CENTRAL*/
+.container{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+
+    
+    width: 75%;
+    height: 550px;
+   /*background: url('https://fondosmil.com/fondo/45321.jpg')no-repeat;*/
+    background-size:cover;
+    background-position:center;
+    margin-top: 10px;
+    padding-top:50px;
+}
+
+
+/*LETRA DE TITULO Y BIENVENIDA*/
+.container .content{
+    
+    width:100%;
+    height: 100%;
+    background: transparent;
+    padding: 90px;
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    font-size: 20px;
+    gap: 60px;
+    text-shadow: -1px 1px 5px rgb(116, 115, 115); /*SOMBRA*/
+}
+
+
+/*LOGO*/
+.content .logo{
+    font-family: 'Courgette', cursive;
+    font-family: 'Lobster Two', cursive; /*TIPOGRAFIA*/
+    font-size: 60px; /*TAMAÑO*/
+    text-shadow: -1px 1px 5px black; /*SOMBRA*/
+}
+
+.content h2{
+    font-size: 40px;
+    font-size: 1;
+    margin-top: 50px;
+
+}
+
+.content h2 span{
+    font-size: 25px;
+}
+
+.text-sci p{
+    font-size: 16px;
+    margin: 20px 0;
+}
+
+
+
+/*CAJA DE REGISTRO*/
+.container .logreg-box{
+   
+    width: calc(100% - 40%);
+    height: 100%;
+    border-radius:1px;
+}
+
+.logreg-box .form-box{
+    
+    width: calc(100% - 40%);
+    height: 90%;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    width: 600px;
+    height: 700px; 
+    background: transparent;
+    backdrop-filter: blur(28px);
+    border-radius: 5px;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius:  5px; 
+   color:white;
+}
+
+/*.logreg-box  .form-box.login{
+    transform: translateX(0);
+    transition: transform .6s ease;
+}
+
+.logreg-box .form-box.login{
+    transform:translateX(430px);
+    transition-delay: 0s;
+}
+
+.logreg-box .form-box.register{
+    transform: translateX(430px)
+}*/
+
+/*TAMAÑO DE LA CAJA DE REGISTRO*/
+.form-box h2{
+    font-size: 40px;
+    text-align: center;
+}
+
+
+/*LINEAS DE LA CAJA DE REGISTRO*/
+.form-box .input-box{
+    position: relative;
+    width: 340px;
+    height: 50px;
+    border-bottom: 2px solid #2ecece;
+    margin: 30px 0;
+
+}
+
+
+/*PLACEHOLDER*/
+.input-box ::placeholder{
+    color:white;
+}
+
+
+
+/*CAJAS DE CORREO Y CONTRASEÑA*/
+.input-box input{
+    width: 60%;
+    height: 75%;
+    background: none;
+    color: #fff;
+    padding-top: 10px;
+    border: none;
+    outline: 10px;
+    background: transparent;
+
+}
+ 
+.input-box .icon{
+    right: 100;
+    transform: translateY(-50%);
+}
+
+
+/*PARA SEPARAR LA SELECCION DE RECORDAR Y OLVIDO CONTRASEÑA*/
+.remember-forgot{
+    font-size: 14.5px;
+    font-weight: 500px;
+    margin: 15px 0 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/*CAMBIO DE COLOR DE OLVIDO CONTRASEÑA*/
+.remember-forgot a{
+    color: white;
+    text-decoration: none;
+}
+
+.remember-forgot a:hover{
+    text-decoration: underline;
+}
+
+
+
+/*BOTON DE INGRESAR*/
+.btn{
+    width: 100%;
+    height: 45px;
+    background: rgb(30, 75, 157);
+    border: none;
+    outline: none;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 20px;
+    color: white;
+    font-weight: 500;
+    box-shadow: 0 0 10px rgba(0);
+}
+
+
+/*SEPARAR LA SELECCION DE CREAR UNA CUENTA*/
+.form-box .login-register{
+    font-size: 14.5px;
+    font-weight: 500;
+    text-align: center;
+    margin-top: 25px;
+}
+
+
+/*CAMBIO DE COLOR DE LA OPCION DE CREAR UNA CUENTA*/
+.login-register p a{
+    color: rgb(62, 173, 220);
+    font-weight: 600;
+    text-decoration: none;
+  
+}
+
+/*PARA HACER LA LINEA DE REGISTRATE*/
+.login-register p a:hover{
+    text-decoration: underline;
+
+}
+
+
+main{
+    display: flex;
+    height: 100%;
+
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+}
+   
+/*esto oculta el formulario*/
+.logreg-box  .hidden{
+    
+ display:none;
+
+ background: red;
+}
+   
+
+
+    

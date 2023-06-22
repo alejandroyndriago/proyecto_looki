@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login and registration form</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&family=Lobster+Two:ital,wght@1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="formulario.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+
+<body class="background">
+    <header class="header">
+        <nav class="navbar">
+            <a href="#">Inicio</a>
+            <a href="#">Sobre nosotros</a>
+            <a href="#">Trabaja con nosotros</a>
+            <a href="#">Contactanos</a>
+        </nav>
+
+
+    </header>
+
+    <main>
+
+
+        <div class="container">
+            <div></div>
+            <div class="content">
+
+                <h2 class="logo">Look-up</h2>
+                <h2>Bienvenido!<br><span>A nuestra nueva red social.</span></h2>
+
+                <p>Estamos muy contentos de que estés con nosotros,
+                    disfruta de nuestro contenido y sobre todo comparte tu mundo con los demás.
+                </p>
+            </div>
+        </div>
+
+        </div>
+
+        <div class="logreg-box">
+
+            <div id="login" class="form-box login">
+
+                <form action="#">
+                    <h2>Iniciar sesión</h2>
+
+                    <div class="input-box">
+                        <span class="icon">
+                            <i class="fa-solid fa-envelope"></i>
+                            <label for="email"></label>
+                            <input type="email" required id="email" placeholder="Correo">
+
+
+                            </label>
+                    </div>
+
+                    <div class="input-box">
+                        <span class="icon"><i class="fa-solid fa-lock"></i></span>
+                        <label for=" password"></label>
+                        <input type="password" required id="password" placeholder="Contraseña">
+
+                    </div>
+
+                    <div class="remember-forgot">
+                        <label><input type="checkbox"> Recordar</label>
+                        <a href="#">¿Olvidaste tu contraseña?</a>
+                    </div>
+
+                    <button type="submit" class="btn">Entrar</button>
+
+                    <div class="login-register">
+                        <p>¿No tienes una cuenta?<a href="#" id="register-link" class="register-link"> Regístrate</a>
+                        </p>
+                    </div>
+
+
+
+
+
+
+
+
+
+
+
+                </form>
+            </div>
+
+
+            <div id="register" class="form-box login register  hidden ">
+
+                <form action="#">
+                    <h2>Registrar</h2>
+                    <!-- campo nombre  -->
+                    <div class="input-box">
+                        <span class="icon">
+                            <i class="fa-solid fa-user"></i>
+                            <label for="name"></label>
+                            <input type="text" required id="name" placeholder="Nombre">
+
+
+                            </label>
+                    </div>
+                    <!-- campo correo -->
+                    <div class="input-box">
+                        <span class="icon">
+                            <i class="fa-solid fa-envelope"></i>
+                            <label for="email"></label>
+                            <input type="email" required id="email" placeholder="Correo">
+
+
+                            </label>
+                    </div>
+
+                    <!-- campo contraseña -->
+                    <div class="input-box">
+                        <span class="icon"><i class="fa-solid fa-lock"></i>
+                            <label for=" password"></label>
+                            <input type="password" required id="password" placeholder="Contraseña">
+
+                    </div>
+
+                    <div class="remember-forgot">
+                        <label><input type="checkbox"> Estoy de acuerdo con los términos y condiciones</label>
+
+                    </div>
+
+                    <button type="submit" class="btn">Comenzar</button>
+
+                    <div class="login-register">
+                        <p>¿Ya tienes una cuenta ?<a href="#" id="login-link" class="register-link"> Iniciar sesión
+                            </a></p>
+                    </div>
+
+
+                </form>
+            </div>
+        </div>
+
+
+    </main>
+    <script src="formulario.js"></script>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+</body>
+
+</html>
