@@ -137,7 +137,7 @@ text-shadow: -1px 1px 3px white;/*sombra*/
     justify-content:center;
     align-items: center;
     width: 600px;
-    height: 750px; 
+    height: 102vh; 
     background: transparent;
     backdrop-filter: blur(28px);
     border-radius: 5px;
