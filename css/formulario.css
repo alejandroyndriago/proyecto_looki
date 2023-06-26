@@ -9,7 +9,7 @@
 /*ENCABEZADO DE LA PAGINA*/
 body{
     background: black;
-
+    overflow-y: hidden;
 }
 
 .header{
