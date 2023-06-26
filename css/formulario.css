@@ -133,12 +133,11 @@ text-shadow: -1px 1px 3px white;/*sombra*/
 .logreg-box .form-box{
     
     width: calc(100% - 40%);
-    height: 90%;
     display: flex;
     justify-content:center;
     align-items: center;
     width: 600px;
-    height: 700px; 
+    height: 750px; 
     background: transparent;
     backdrop-filter: blur(28px);
     border-radius: 5px;
@@ -390,7 +389,6 @@ body{
 
     .header .navbar {
         position: absolute;
-        top: 480px;
         padding-top: 40px;
     }
 
@@ -426,7 +424,7 @@ body{
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        height: 100vh; 
+        height: 650px;
     }
        
     /*esto oculta el formulario*/
