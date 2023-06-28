@@ -1,0 +1,146 @@
+*{
+    /* `margin: 0;` establece el margen de todos los elementos en 0, lo que significa que no habrá
+      espacio entre el elemento y su padre o elementos vecinos. */
+    margin: 0;
+    padding: 0;
+  }
+  @font-face {
+    font-family: looki;
+    src: url("../fonts/lucida-handwriting-italic.ttf");
+  }
+  
+  /* h1 {
+    font-family: looki;
+    font-size: 100px;
+    text-align: center;
+    margin-top: 5px;
+    color: rgb(98, 5, 157);
+  }
+  
+  
+  
+  */
+  /* Pagina de cursos */
+
+  .cursos {
+    width: 100%;
+
+  }
+  .cursos header {
+    margin: 0;
+    width: 100%;
+    height: 70px;
+    background-color: gray;
+  }
+  .cursos nav {
+    margin: 0;
+  }
+  
+  .cursos nav .dropdown-menu {
+    margin-bottom: 100px;
+  }
+  
+  
+  .cursos .clasificacion .nav-tabs {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    border: none;
+    background-color: gray;
+    height: 40px;
+  }
+  
+  .cursos .clasificacion ul .nav-item {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1rem;
+    font-weight: bolder;
+    border: none;
+  }
+  
+  .cursos .clasificacion ul .nav-item:hover {
+    border: none;
+    color: gray;
+    background-color: white;
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 40px;
+  }
+  
+  .cursos .clasificacion ul .nav-item .nav-link {
+    color: rgb(41, 0, 57);
+    border: none;
+  }
+  
+  .cursos .clasificacion ul .nav-item .nav-link:hover {
+    border: none;
+    border-bottom: none; 
+  }
+  
+  .cursos .clasificacion ul .nav-item .dropdown-menu.show {
+    border: none;
+    border-bottom: 10px solid blue;
+  }
+  
+  
+ .cursos main {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.cursos main ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+ 
+}
+.cursos main ul li {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+  
+  footer {
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    margin-top: 50px;
+    padding: 5px 10px 5px 10px;
+    height: 60px;
+    color: white;
+    font-weight: bold;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: gray;
+  }
+  
+  footer a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+  }
+  
+  
+  footer .ladoIz {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  
+  footer .ladoCe {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    color: rgb(255, 255, 255);
+  }
+  
+  footer .ladoDer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: end;
+  }
