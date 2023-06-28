@@ -1,113 +1,161 @@
 :root {
-    --primary: #A5C882;
-    --secondary: #D33F49;
-    --light: #fff;
-    --dark: #000;
-    --diabled: #e7e7e7;
+  --primary: #a5c882;
+  --secondary: #d33f49;
+  --light: #fff;
+  --dark: #000;
+  --diabled: #e7e7e7;
 }
+
 
 body {
-    font-family: 'Lato', sans-serif;
-    margin: 0;
-    height: 100vh;
-    background-color: var(--diabled);
+  font-family: "Lato", sans-serif;
+  margin: 0;
+  height: 100vh;
+  background-color: var(--diabled);
 }
 
+header {
+    height: 70px;
+    background-color: gray;
+    color: white;
+  }
+
+ header nav {
+      padding: 0 15px 0 15px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+  }
+
+  header nav .navbarNav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 15px;
+  }
+
+  header nav .navbarNav a {
+    color: white;
+    font-weight: bolder;
+    margin: 0 10px 0 10px;
+    text-decoration: none;
+  }
+
+  main {
+    height: auto;
+  }
+
 *:first-letter {
-    text-transform: capitalize;
+  text-transform: capitalize;
 }
 
 .roundBorder {
-    border-radius: 5px;
+  border-radius: 5px;
+}
+.formulario {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
 }
 
 .list {
-    margin: 25px auto;
-    padding: 25px;
-    background-color: var(--light);
-    width: 100%;
-    max-width: 350px;
+  margin: 25px auto;
+  padding: 25px;
+  background-color: var(--light);
+  width: 100%;
+  max-width: 350px;
 }
 
 .date {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .dateRight {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 #dateNumber {
-    font-size: 50px;
+  font-size: 50px;
 }
 
 #dateText {
-    letter-spacing: 3px;
-    text-transform: uppercase;
+  letter-spacing: 3px;
+  text-transform: uppercase;
 }
 
 #dateMonth,
 #dateNumber,
-#dateText  {
-    font-weight: bold;
+#dateText {
+  font-weight: bold;
 }
 
 #dateMonth,
 #dateYear {
-    margin-left: 7px;
-    font-size: 20px;
+  margin-left: 7px;
+  font-size: 20px;
 }
 
 form {
-    margin: 20px 0;
-    display: grid;
-    grid-auto-flow: column;
-    grid-template-columns: auto 35px auto;
-    grid-column-gap: 15px;
+  margin: 20px 0;
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: auto 35px auto;
+  grid-column-gap: 15px;
 }
 
 input {
-    border: none;
-    padding-left: 10px;
-    background-color: var(--diabled);
+  border: none;
+  padding-left: 10px;
+  background-color: var(--diabled);
+  width: 75%;
+  height: 30px;
 }
 
 input:focus {
-    outline: none;
+  outline: none;
 }
 
 .addTaskButton,
 .orderButton {
-    border: none;
-    font-weight: bold;
-    cursor: pointer;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  margin: 10px;
 }
 
 .addTaskButton {
-    height: 35px;
-    border-radius: 50%;
-    font-size: 18px;
-    background-color: var(--diabled);
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+  font-size: 18px;
+  background-color: var(--diabled);
 }
 
 .orderButton {
-    background-color: var(--secondary);
-    color: var(--light);
+  background-color: var(--secondary);
+  color: var(--light);
 }
 
 .task {
-    background-color: var(--primary);
-    padding: 15px;
-    margin-top: 15px;
-    color: var(--light);
-    cursor: pointer;
+  background-color: var(--primary);
+  padding: 15px;
+  margin-top: 15px;
+  color: var(--light);
+  cursor: pointer;
 }
 
 .done {
-    background-color: var(--diabled);
-    text-decoration: line-through;
-    color: var(--dark);
+  background-color: var(--diabled);
+  text-decoration: line-through;
+  color: var(--dark);
+}
+
+footer {
+    position: absolute;
+    height: 50px;
+    background-color: gray;
 }
