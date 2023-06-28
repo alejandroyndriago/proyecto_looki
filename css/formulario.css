@@ -10,7 +10,7 @@
 /*ENCABEZADO DE LA PAGINA*/
 body{
     background: black;
-
+    overflow-y: hidden;
 }
 
 .header{
@@ -38,20 +38,13 @@ text-shadow: -1px 1px 3px white;/*sombra*/
 
 
 /*BARRA DE MOVIMIENTO DE INICIO, NOSOTROS, ETC*/
- .navbar a{
-   
+ .navbar a{  
     transition: 250ms; 
-    
 } 
 
  .navbar a:hover{ 
-    
     border-bottom: 2px solid white;
     opacity: 1;  
-   
- 
-
-   
 } 
 
 
@@ -63,7 +56,7 @@ text-shadow: -1px 1px 3px white;/*sombra*/
     align-items: center;
     justify-content: center;
 
-    background: url('https://fondosmil.com/fondo/45321.jpg')no-repeat;
+    background: url('https://www.10wallpaper.com/wallpaper/1366x768/1711/3D_Sharp_lines_Vector_HD_Wallpaper_1366x768.jpg')no-repeat;
     background-size: cover;
     background-position: center;
     
@@ -141,12 +134,11 @@ text-shadow: -1px 1px 3px white;/*sombra*/
 .logreg-box .form-box{
     
     width: calc(100% - 40%);
-    height: 90%;
     display: flex;
     justify-content:center;
     align-items: center;
     width: 600px;
-    height: 700px; 
+    height: 102vh; 
     background: transparent;
     backdrop-filter: blur(28px);
     border-radius: 5px;
@@ -219,7 +211,7 @@ text-shadow: -1px 1px 3px white;/*sombra*/
     font-weight: 500px;
     margin: 15px 0 15px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 
 
@@ -295,5 +287,154 @@ body{
 }
    
 
+/* responsive index */
+/* cel */
+@media screen and (min-width: 250px) and (max-width: 500px) {
 
+    .header{
+        z-index: 3;
+    }
+    .header .navbar {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .header .navbar a {
+        font-size: 10px;
+    }
+
+    /*FONDO DE LA IMAGEN*/
+    .background{
+        width: 100vw;
+        height: auto;
+        display: flex; /* poner flexible a la pagina*/
+        align-items: center;
+        justify-content: center;
+        background-size: cover;
+        background-position: center;
+        
+    }
+    
+    /*IMAGEN CENTRAL*/
+    .container{
+       display: none;
+    }
+    
+    
+    /*CAJA DE REGISTRO*/
+    .container .logreg-box{
+        width:100%;
+        height: 100%;
+        align-items: center;
+    }
+    
+    .logreg-box form {
+        width: 80%;
+    }
+
+    .logreg-box .form-box{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        height: 100vh; 
+        
+    }
+    /*TAMAÑO DE LA CAJA DE REGISTRO*/
+    .form-box h2{
+        font-size: 20px;
+        text-align: center;
+        width: 80vw;
+    }
+    
+    /*LINEAS DE LA CAJA DE REGISTRO*/
+    .form-box .input-box{
+        margin-top: 10px;
+        margin-bottom: 10px;
+        width: 90%;
+    }
+    
+    
+    /*BOTON DE INGRESAR*/
+    .btn{
+        width: 40%;
+        height: 35px;
+        font-size: 1rem;
+        margin-left: 100px;
+    }
+       
+    /*esto oculta el formulario*/
+    .logreg-box  .hidden{
+        
+     display:none;
+    
+     background: red;
+    }
+   
+}
+
+/* tablet */
+@media screen and (min-width: 501px) and (max-width: 1200px) {
+
+    .header{
+        margin: -25px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        z-index: 3;
+    }
+
+    .header .navbar {
+        position: absolute;
+        padding-top: 40px;
+    }
+
+    .header .navbar a {
+        font-size: 20px;
+    }
+
+    /*FONDO DE LA IMAGEN*/
+    .background {
+        display: flex; /* poner flexible a la pagina*/
+        align-items: center;
+        justify-content: center;
+       
+    }
+    
+    /*IMAGEN CENTRAL*/
+    .container{
+       display: none;
+    }
+    
+    /*CAJA DE REGISTRO*/
+    .container .logreg-box{
+        width:100%;
+        height: 110%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .logreg-box .form-box{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 650px;
+    }
+       
+    /*esto oculta el formulario*/
+    .logreg-box  .hidden{
+        
+     display:none;
+    
+     background: red;
+    }
+   
+}
     
