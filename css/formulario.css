@@ -1,3 +1,4 @@
+
 *{
     margin: 0;
     padding: 0;
@@ -9,7 +10,7 @@
 /*ENCABEZADO DE LA PAGINA*/
 body{
     background: black;
-
+    overflow-y: hidden;
 }
 
 .header{
@@ -55,7 +56,7 @@ text-shadow: -1px 1px 3px white;/*sombra*/
     align-items: center;
     justify-content: center;
 
-    background: url('https://fondosmil.com/fondo/45321.jpg')no-repeat;
+    background: url('https://www.10wallpaper.com/wallpaper/1366x768/1711/3D_Sharp_lines_Vector_HD_Wallpaper_1366x768.jpg')no-repeat;
     background-size: cover;
     background-position: center;
     
@@ -133,12 +134,11 @@ text-shadow: -1px 1px 3px white;/*sombra*/
 .logreg-box .form-box{
     
     width: calc(100% - 40%);
-    height: 90%;
     display: flex;
     justify-content:center;
     align-items: center;
     width: 600px;
-    height: 700px; 
+    height: 102vh; 
     background: transparent;
     backdrop-filter: blur(28px);
     border-radius: 5px;
@@ -211,7 +211,7 @@ text-shadow: -1px 1px 3px white;/*sombra*/
     font-weight: 500px;
     margin: 15px 0 15px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 
 
@@ -289,27 +289,29 @@ body{
 
 /* responsive index */
 /* cel */
-@media screen and (min-width: 320px) and (max-width: 500px) {
+@media screen and (min-width: 250px) and (max-width: 500px) {
 
     .header{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-        align-items: center;
         z-index: 3;
     }
+    .header .navbar {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
     .header .navbar a {
         font-size: 10px;
     }
 
     /*FONDO DE LA IMAGEN*/
     .background{
-        width: 100%;
+        width: 100vw;
         height: auto;
         display: flex; /* poner flexible a la pagina*/
         align-items: center;
         justify-content: center;
-        background: url('https://fondosmil.com/fondo/45321.jpg')no-repeat;
         background-size: cover;
         background-position: center;
         
@@ -325,8 +327,13 @@ body{
     .container .logreg-box{
         width:100%;
         height: 100%;
+        align-items: center;
     }
     
+    .logreg-box form {
+        width: 80%;
+    }
+
     .logreg-box .form-box{
         display: flex;
         flex-direction: column;
@@ -340,13 +347,14 @@ body{
     .form-box h2{
         font-size: 20px;
         text-align: center;
-        width: 60vh;
+        width: 80vw;
     }
     
     /*LINEAS DE LA CAJA DE REGISTRO*/
     .form-box .input-box{
         margin-top: 10px;
         margin-bottom: 10px;
+        width: 90%;
     }
     
     
@@ -355,6 +363,7 @@ body{
         width: 40%;
         height: 35px;
         font-size: 1rem;
+        margin-left: 100px;
     }
        
     /*esto oculta el formulario*/
@@ -381,7 +390,6 @@ body{
 
     .header .navbar {
         position: absolute;
-        top: 480px;
         padding-top: 40px;
     }
 
@@ -394,10 +402,7 @@ body{
         display: flex; /* poner flexible a la pagina*/
         align-items: center;
         justify-content: center;
-        background: url('https://fondosmil.com/fondo/45321.jpg')no-repeat;
-        background-size: cover;
-        background-position: center;
-        
+       
     }
     
     /*IMAGEN CENTRAL*/
@@ -420,7 +425,7 @@ body{
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        height: 100vh; 
+        height: 650px;
     }
        
     /*esto oculta el formulario*/
