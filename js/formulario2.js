@@ -53,7 +53,7 @@ document.addEventListener("DOMContentLoaded", function() {
         timer: 2000
       }).then(() => {
         // Código adicional que puedes agregar después de un registro exitoso
-        window.location.href='./feed.html'
+        window.location.href='./pages/feed.html'
       });
     });
   });
