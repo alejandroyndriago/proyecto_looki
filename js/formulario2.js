@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", function() {
           timer: 2000
         }).then(() => {
           // Código adicional que puedes agregar después de iniciar sesión exitosamente
-          window.location.href='../pages/feed.html'
+          window.location.href='https://natarey.github.io/proyecto_looki/pages/feed'
         });
       } else {
         Swal.fire({
@@ -53,7 +53,7 @@ document.addEventListener("DOMContentLoaded", function() {
         timer: 2000
       }).then(() => {
         // Código adicional que puedes agregar después de un registro exitoso
-        window.location.href='../pages/feed.html'
+        window.location.href='./feed.html'
       });
     });
   });
