@@ -171,8 +171,8 @@ input:focus {
   margin: 5px 5px;
 }
 .image-list-item {
-  width: 300px;
-  height: 300px;
+  width: 700px;
+  height: 400px;
   margin: 10px;
 }
 .image-list-item img {
