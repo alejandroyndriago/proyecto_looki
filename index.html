@@ -58,7 +58,7 @@
 
                     <div class="remember-forgot">
                         <label><input type="checkbox"> Recordar</label>
-                        <a href="#">¿Olvidaste tu contraseña?</a>
+                        <a href="#" id="password-link">¿Olvidaste tu contraseña?</a>
                     </div>
 
                     <button type="submit" class="btn">Entrar</button>
@@ -72,7 +72,6 @@
 
 
             <div id="register" class="form-box login register  hidden ">
-
                 <form id="registroRegistro" action="#">
                     <h2>Registrar</h2>
                     <!-- campo nombre  -->
@@ -117,6 +116,26 @@
                     </div>
 
 
+                </form>
+            </div>
+
+            <div id="forgetPassword" class="form-box password hidden">
+                <form id="rememberForgetPassword" action="#">
+                    <h2>Recuperar contraseña</h2>
+                    <div class="input-box">
+                        <span class="icon">
+                            <i class="fa-solid fa-envelope"></i>
+                            <label for="email"></label>
+                            <input type="email" required id="emailForget" placeholder="Correo">
+                            </label>
+                    </div>
+
+                    <button type="submit" class="btn">Enviar</button>
+
+                    <div class="login-register">
+                        <p>¿La recordaste?<a href="#" id="login-linkk" class="login-link"> Inicia sesión</a>
+                        </p>
+                    </div>
                 </form>
             </div>
         </div>
