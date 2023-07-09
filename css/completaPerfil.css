@@ -1,4 +1,13 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Finlandica:wght@400;500&family=Kaushan+Script&family=Lobster+Two:ital,wght@1,700&display=swap');
+:root {
+  --primary: #a5c882;
+  --secondary: #d33f49;
+  --light: #fff;
+  --dark: #000;
+  --diabled: #e7e7e7;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -8,12 +17,52 @@
 
 body{
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     min-height: 100vh;
     overflow: hidden;
     background-color: rgb(77, 41, 105);
 }
+
+header {
+    display: flex;
+    margin-top: 0;
+    width: 100%;
+    height: 80px;
+    background-color: #06113B;
+    color: white;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+
+ header nav {
+      padding: 0 10px 0 10px;
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+  }
+
+  header nav .navbarNav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 15px;
+  }
+
+  header nav .navbarNav a {
+    color: white;
+    font-weight: bolder;
+    margin: 10px;
+    text-decoration: none;
+  }
+  h2{
+    font-family: 'Lobster Two', cursive;
+    font-size: 40px;
+  }
 
 ::selection{
     color: #fff;
@@ -25,7 +74,7 @@ body{
     background-color: aliceblue;
     text-align: center;
     border-radius: 5px;
-    padding: 50px 35px 10px 35px;
+    padding: 10px 25px 10px 25px;
 }
 
 .container header{
@@ -55,7 +104,7 @@ body{
     font-weight: 500;
 }
 .form-outer form .page .field{
-    height: 45px;
+    height: 25px;
     width: 330px;
     margin: 45px 0;
     display:flex;

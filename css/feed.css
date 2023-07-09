@@ -8,29 +8,38 @@
 }
 
 body {
+  display: flex;
+  flex-direction: column;
   font-family:'poppins', sans-serif;
   margin: 0;
   height: 100vh;
 }
+
 .img{
+  margin: 0;
+  height: 100%;
   background: url('../Recursos/Fondo5.jpg')no-repeat;
   background-size: cover;
   background-position: center;
 }
 
 header {
+    display: flex;
     margin-top: 0;
     width: 100%;
-    height: 100px;
+    height: 80px;
     background-color: #06113B;
-    color: white;
-  }
+    align-items: center;
+    color: white;  }
 
  header nav {
-      padding: 0 10px 0 10px;
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
+   display: flex;
+   width: 100%;
+   flex-direction: row;
+   justify-content: space-between;
+   align-items: center;
+   padding: 0 10px 0 10px;
+   margin-bottom: 0;
   }
 
   header nav .navbarNav {
@@ -39,6 +48,7 @@ header {
     align-items: center;
     justify-content: space-between;
     font-size: 15px;
+    margin-bottom: 0;
   }
 
   header nav .navbarNav a {
@@ -53,7 +63,7 @@ header {
   }
 
   main {
-    height: auto;
+    height: 100%;
   }
 
 *:first-letter {

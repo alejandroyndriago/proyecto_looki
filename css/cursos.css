@@ -1,100 +1,69 @@
-*{
-    /* `margin: 0;` establece el margen de todos los elementos en 0, lo que significa que no habrá
-      espacio entre el elemento y su padre o elementos vecinos. */
+  @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Finlandica:wght@400;500&family=Kaushan+Script&family=Lobster+Two:ital,wght@1,700&display=swap');
+  :root {
+    --primary: #a5c882;
+    --secondary: #d33f49;
+    --light: #fff;
+    --dark: #000;
+    --diabled: #e7e7e7;
+  }
+  *{
     margin: 0;
     padding: 0;
-  }
-  @font-face {
-    font-family: looki;
-    src: url("../fonts/lucida-handwriting-italic.ttf");
-  }
-  
-  /* h1 {
-    font-family: looki;
-    font-size: 100px;
-    text-align: center;
-    margin-top: 5px;
-    color: rgb(98, 5, 157);
-  }
-  */
+    outline: none;
+    font-family: 'Poppins', sans-serif;
+}
   /* Pagina de cursos */
 
   .cursos {
-    width: 100%;
-
-  }
-  .cursos header {
-    width: 100%;
-    height: 70px;
-    background-color: gray;
-    color: white;
-  }
-
-  .cursos header nav {
-    padding: 0 15px 0 15px;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
   }
-  
+
+
+  .cursos header {
+    display: flex;
+    margin-top: 0;
+    width: 100%;
+    height: 80px;
+    background-color: #06113B;
+    color: white;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+
+ .cursos header nav {
+      padding: 0 10px 0 10px;
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+  }
+
   .cursos header nav .navbarNav {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
     font-size: 15px;
-    
   }
+
   .cursos header nav .navbarNav a {
     color: white;
     font-weight: bolder;
-    margin: 0 10px 0 10px;
+    margin: 10px;
     text-decoration: none;
   }
-  
-  .cursos nav .dropdown-menu {
-    margin-bottom: 100px;
+ .cursos header .navbar h2{
+    font-family: 'Lobster Two', cursive;
+    font-size: 40px;
   }
 
-  .cursos .clasificacion .nav-tabs {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    border: none;
-    background-color: gray;
-    height: 40px;
-  }
-  
-  .cursos .clasificacion ul .nav-item {
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 1rem;
-    font-weight: bolder;
-    border: none;
-  }
-  
-  .cursos .clasificacion ul .nav-item:hover {
-    border: none;
-    color: gray;
-    background-color: white;
-    border-top-left-radius: 50px;
-    border-bottom-right-radius: 40px;
-  }
-  
-  .cursos .clasificacion ul .nav-item .nav-link {
-    color: rgb(41, 0, 57);
-    border: none;
-  }
-  
-  .cursos .clasificacion ul .nav-item .nav-link:hover {
-    border: none;
-    border-bottom: none; 
-  }
-  
-  .cursos .clasificacion ul .nav-item .dropdown-menu.show {
-    border: none;
-    border-bottom: 10px solid blue;
-  }
-  
+
  .cursos main {
   width: 100%;
   height: 100%;
